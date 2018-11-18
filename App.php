@@ -31,7 +31,7 @@ $container = $app->getContainer();
 // Para mostrar información en el archivo app.log hay que ejecutar:
 // $this->logger->addInfo('Something interesting happened');
 $container['logger'] = function($c) {
-    $logger = new \Monolog\Logger('MultimediaDB');
+    $logger = new \Monolog\Logger('EmpresaDB');
     $file_handler = new \Monolog\Handler\StreamHandler('./app.log');
     $logger->pushHandler($file_handler);
     return $logger;
@@ -72,7 +72,7 @@ $app->add(function ($req, $res, $next) {
 require 'root.php';
 
 // Script para tareas relacionadas con películas
-//require 'movies.php';
+require 'articulos.php';
 
 // Script para tareas relacionadas con libros
 //require 'books.php';
