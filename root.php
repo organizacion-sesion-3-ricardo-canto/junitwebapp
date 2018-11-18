@@ -11,10 +11,10 @@ $app->get('/', function ($req, $res, $args)  {
     // Creamos un objeto collection + json con la lista de películas
 
     // Obtenemos la lista de los libros de la base de datos y la convertimos del formato Json (el devuelto por Eloquent) a un array PHP
-    $articles = json_decode(\Article::all());
+    $articles = json_decode(\Articulo::all());
 
     // Mostramos la vista
-    return $this->view->render($res, 'articulolist_template.php', [
+    return $this->view->render($res, 'root_template.php', [
         'items' => $articles
     ]);
 })->setName('root');

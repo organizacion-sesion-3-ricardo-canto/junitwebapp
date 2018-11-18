@@ -3,7 +3,7 @@
         "title" : "Articulos Database",
             "type" : "index",
             "version" : "1.0",
-            "href" : "{{ path_for('index')}}",
+            "href" : "{{ path_for('root')}}",
 
             "links" : [
                 {"rel" : "profile" , "href" : "http://schema.org/Book","prompt":"Perfil"}
@@ -13,7 +13,7 @@
                 {% for item in items %}
 	  
                 {
-                    "href" : "{{ path_for('index') }}/{{ item.id }}",
+                    "href" : "{{ path_for('articulos') }}/{{ item.id }}",
                         "data" : [
                             {"name" : "name", "value" : "{{ item.name }}", "prompt" : "Nombre del artículo"}
                         ]

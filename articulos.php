@@ -1,10 +1,10 @@
 <?php
 
 // Modelo de objetos que se corresponde con la tabla de MySQL
-class Articulo extends \Illuminate\Database\Eloquent\Model
+/*class Articulo extends \Illuminate\Database\Eloquent\Model
 {
 	public $timestamps = false;
-}
+}*/
 
 $app->get('/articulos', function ($req, $res, $args)  {
 
