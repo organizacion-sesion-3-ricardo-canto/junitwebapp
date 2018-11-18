@@ -20,7 +20,7 @@ $app->get('/articulos', function ($req, $res, $args)  {
 })->setName('articulos');
 
 
-/*  Obtención de un libro en concreto  
+  Obtención de un libro en concreto  
 $app->get('/articulos/{name}', function ($req, $res, $args) {
 
     // Creamos un objeto collection + json con el libro pasado como parámetro
@@ -34,7 +34,7 @@ $app->get('/articulos/{name}', function ($req, $res, $args) {
         'item' => $articulo
     ]);
 
-});*/
+});
 
 
 /* Borrado de un libro en concreto */
