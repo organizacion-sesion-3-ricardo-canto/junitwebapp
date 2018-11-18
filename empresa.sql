@@ -4,7 +4,7 @@ SET time_zone = "+00:00";
 --
 --
 -- DROP DATABASE `empresa`;
-CREATE DATABASE `empresa` DEFAULT CHARACTER SET utf8 COLLATE utf8_spanish_ci;
+-- CREATE DATABASE `empresa` DEFAULT CHARACTER SET utf8 COLLATE utf8_spanish_ci;
 USE `empresa`;
 
 
