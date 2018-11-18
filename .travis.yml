@@ -1,0 +1,15 @@
+language: php
+php:
+- 7.2
+services:
+- mysql
+before_script:
+- composer install
+script: "./vendor/bin/phpunit ./tests"
+deploy:
+  provider: heroku
+  app: junitwebapp
+  on: master
+  skip_cleanup: true
+  api_key:
+    secure: LbVx/AFerAWJQaUmrC0nG7MwkqqLVdhXFxxGN0IHf7XTwzHEhgUD855JZW11uG8o1QmduFEv5njddpSKMeCxhJd/9YKSoCzpUcU5BJQONGgKhdVgb6jOCcj5QPCfCNqnFzo/TQbMEEW5u0m3fP4BMpfDaGAqIJPY28TPNI9NtMU9+9CN9Uv7fhYlIeQLRaeJ8hIbaYT/sbPH1Ya0rcwQUFF2KV7g41gYShXjq/umAch1IddZ9QFqaNK90UL6jXFw5tXn02X41c7F9zMJUZ28IeszAc+XjIgbeRENl8M3GHc3/9/ZQLtmszDROf6BtfAB1R7v5zPgUFkIZr3e5X33+Vb0fW9jka4HlfugoBvjUiGHwDDM9inRg3gkAfsxITQcYnVzsSS6BY1zSJuYEL5aH28AVpU1ICWtyVduVB3AOq9em0cufxBWTbgqyKn8HCK6U4d1uxXe9XBqxK9Q4IxEtfIdvctpGVRgZg2TjhZ5yfToIVEql75nJqoxTha6B3BgT87FOK41FAgVSveDrH/MuXtjxlV/dKsPYBOzHhl0jq0XnldilV4Lg+BN6zWTQcpLdi7/oal9aDUIK0ErYWHyxikHwzURQ9es4a9WTFNh/AyFccEPx1MxZoUfPzXuzRWHhU6c9qX9yXWRUf+ERno+VIT55B5Qu43qZxBwJsmk+C0=
