@@ -1,11 +1,17 @@
 <?php
 
-// Cargar Slim Framework y Eloquent a través de Composer
-require 'App.php';
+// Esta función escuchará en la ruta principal de la API, '/'
+$app->get('/', function ($req, $res, $args) {
 
-$app = (new App())->get();
-$app->run();
+    // Creamos un objeto collection + json con un enlace sólo a la categoría artículos
 
+    // Creamos los datos que vamos a pasar a la vista
+    return $this->view->render($res, 'index_template.php', [
+        'url' => $req->getUri()
+    ]);
+
+
+})->setName('index');
 
 
 ?>

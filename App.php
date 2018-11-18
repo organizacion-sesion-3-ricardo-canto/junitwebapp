@@ -69,7 +69,7 @@ $app->add(function ($req, $res, $next) {
 });
 
 // Script con la ruta de entrada a la API
-require 'root.php';
+require 'index.php';
 
 // Script para tareas relacionadas con películas
 require 'articulos.php';

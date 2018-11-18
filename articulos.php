@@ -1,10 +1,10 @@
 <?php
 
 // Modelo de objetos que se corresponde con la tabla de MySQL
-/*class Articulo extends \Illuminate\Database\Eloquent\Model
+class Articulo extends \Illuminate\Database\Eloquent\Model
 {
 	public $timestamps = false;
-}*/
+}
 
 $app->get('/articulos', function ($req, $res, $args)  {
 
@@ -14,13 +14,13 @@ $app->get('/articulos', function ($req, $res, $args)  {
     $articles = json_decode(\Article::all());
 
     // Mostramos la vista
-    return $this->view->render($res, 'articulolist_template.php', [
+    return $this->view->render($res, 'articuloslist_template.php', [
         'items' => $articles
     ]);
 })->setName('articulos');
 
 
-/*  Obtención de un libro en concreto  */
+/*  Obtención de un libro en concreto  
 $app->get('/articulos/{name}', function ($req, $res, $args) {
 
     // Creamos un objeto collection + json con el libro pasado como parámetro
@@ -34,7 +34,7 @@ $app->get('/articulos/{name}', function ($req, $res, $args) {
         'item' => $articulo
     ]);
 
-});
+});*/
 
 
 /* Borrado de un libro en concreto */
