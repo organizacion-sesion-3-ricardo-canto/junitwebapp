@@ -1,6 +1,6 @@
 { "collection" :
     {
-        "title" : "Multimedia Database",
+        "title" : "Empresa Database",
             "type" : "index",
             "version" : "1.0",
             "href" : "{{ path_for('root')}}",
