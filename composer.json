@@ -8,6 +8,6 @@
     "monolog/monolog": "1.*"
   },
   "require-dev": {
-    "junit/junit": "4.1.*"
+    "phpunit/phpunit": "4.4.*"
   }
 }
