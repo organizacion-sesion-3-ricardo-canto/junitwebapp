@@ -4,7 +4,7 @@ use Slim\Http\Environment;
 use Slim\Http\Request;
 require 'App.php';
 
-class RootTest extends PHPUnit_Framework_TestCase
+class IndexTest extends PHPUnit_Framework_TestCase
 {
     protected $app;
 
