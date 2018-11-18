@@ -1,9 +1,9 @@
 { "collection" :
     {
         "title" : "Articulos Database",
-            "type" : "articulo",
+            "type" : "index",
             "version" : "1.0",
-            "href" : "{{ path_for('articulos')}}",
+            "href" : "{{ path_for('index')}}",
       
             "links" : [
                 {"rel" : "profile" , "href" : "http://schema.org/Book","prompt":"Perfil"}
@@ -11,7 +11,7 @@
       
             "items" : [
                 {
-                    "href" : "{{ path_for('articulos') }}/{{ item.id }}",
+                    "href" : "{{ path_for('index') }}/{{ item.id }}",
                         "data" : [
                             {"name" : "nombre", "value" : "{{ item.name }}", "prompt" : "Nombre del artículo"},
                             {"name" : "precio", "value" : "{{ item.description }}", "prompt" : "Precio del artículo"},
