@@ -15,7 +15,7 @@ $app->get('/articulos', function ($req, $res, $args)  {
 
     // Mostramos la vista
     return $this->view->render($res, 'articulolist_template.php', [
-        'items' => $articulos;
+        'items' => $articulos
     ]);
 })->setName('articulos');
 
