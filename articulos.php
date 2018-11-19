@@ -14,8 +14,8 @@ $app->get('/articulos', function ($req, $res, $args)  {
     $articles = json_decode(\Article::all());
 
     // Mostramos la vista
-    return $this->view->render($res, 'articuloslist_template.php', [
-        'items' => $articles
+    return $this->view->render($res, 'articulolist_template.php', [
+        'items' => $articulos;
     ]);
 })->setName('articulos');
 

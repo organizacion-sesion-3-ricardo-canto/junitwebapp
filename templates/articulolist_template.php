@@ -1,7 +1,7 @@
 { "collection" :
     {
         "title" : "Articulos Database",
-            "type" : "articulos",
+            "type" : "articulo",
             "version" : "1.0",
             "href" : "{{ path_for('articulos')}}",
       
@@ -12,15 +12,13 @@
             "items" : [
 		{% for item in items %}
 
-                {
+               {
                     "href" : "{{ path_for('articulos') }}/{{ item.id }}",
                         "data" : [
-                            {"name" : "nombre", "value" : "{{ item.name }}", "prompt" : "Nombre del artículo"},
-                            {"name" : "precio", "value" : "{{ item.description }}", "prompt" : "Precio del artículo"},
-                            {"name" : "codigo", "value" : "{{ item.isbn }}", "prompt" : "Código del artículo"},
-                            {"name" : "grupo", "value" : "{{ item.image }}", "prompt" : "Grupo"}
+                            {"name" : "nombre", "value" : "{{ item.name }}", "prompt" : "Nombre del artículo"}
                         ]
                         } {% if not loop.last %},{% endif %}
+	  
 	  	{% endfor %}
             ],
       

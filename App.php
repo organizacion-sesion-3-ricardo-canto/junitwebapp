@@ -74,17 +74,6 @@ require 'index.php';
 // Script para tareas relacionadas con películas
 require 'articulos.php';
 
-// Script para tareas relacionadas con libros
-//require 'books.php';
-
-// Script para tareas relacionadas con discos
-//require 'musicalbums.php';
-
-// Script para tareas relacionadas con videojuegos
-//require 'videogames.php';
-      
-// Script para tareas relacionadas con series de TV
-//require 'TVseries.php';
 
 $this->app = $app;
     }
